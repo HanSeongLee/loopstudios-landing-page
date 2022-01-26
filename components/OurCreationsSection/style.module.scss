@@ -1,0 +1,39 @@
+
+.ourCreationsSection {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 48px;
+  }
+
+  .creationContainer {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 24px;
+    margin-bottom: 34px;
+  }
+
+  .seeAllButton {
+    background: transparent;
+    font-family: "Alata", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 13px 38px;
+    border: 1px solid #000000;
+  }
+}

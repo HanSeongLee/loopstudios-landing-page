@@ -1,0 +1,24 @@
+
+.creationCard {
+  position: relative;
+
+  .image {
+    width: 100%;
+    height: 120px;
+  }
+
+  .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    white-space: pre;
+  }
+}

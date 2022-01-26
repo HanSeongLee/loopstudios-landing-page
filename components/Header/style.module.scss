@@ -1,0 +1,24 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 40px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 144px;
+    height: auto;
+  }
+
+  .menuButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}

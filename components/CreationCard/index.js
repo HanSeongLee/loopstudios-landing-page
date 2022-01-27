@@ -1,13 +1,18 @@
 import React from "react";
 import styles from './style.module.scss';
 
-const CreationCard = ({ src, title }) => {
+const CreationCard = ({ src, srcMobile, title }) => {
     return (
         <div className={styles.creationCard}>
-            <img className={styles.image}
-                 src={src}
-                 alt={title}
-            />
+            <picture>
+                <source srcSet={src}
+                        media={'(min-width: 768px)'}
+                />
+                <img className={styles.image}
+                     src={srcMobile}
+                     alt={title}
+                />
+            </picture>
             <div className={styles.title}>
                 {title}
             </div>

@@ -1,3 +1,4 @@
+@import "styles/utils";
 
 .ourCreationsSection {
   .container {
@@ -5,6 +6,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include media(">tablet") {
+      display: grid;
+      grid-template-areas: 'title button'
+                           'content content';
+      grid-row-gap: 80px;
+      align-items: initial;
+      justify-content: initial;
+    }
   }
 
   .title {
@@ -16,24 +26,51 @@
     text-transform: uppercase;
     color: #000000;
     margin-bottom: 48px;
+
+    @include media(">tablet") {
+      grid-area: title;
+      font-size: 48px;
+      line-height: 48px;
+      margin-bottom: 0;
+      text-align: left;
+    }
   }
 
   .creationContainer {
+    grid-area: content;
     display: flex;
     flex-direction: column;
     grid-gap: 24px;
     margin-bottom: 34px;
+
+    @include media(">tablet") {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, min(254px));
+      grid-auto-rows: 450px;
+      grid-gap: 30px;
+      margin-bottom: 0;
+    }
   }
 
-  .seeAllButton {
-    background: transparent;
-    font-family: "Alata", sans-serif;
-    font-size: 14px;
-    line-height: 14px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: #000000;
-    padding: 13px 38px;
-    border: 1px solid #000000;
+  .seeAllButtonWrapper {
+
+    @include media(">tablet") {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .seeAllButton {
+      grid-area: button;
+      background: transparent;
+      font-family: "Alata", sans-serif;
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #000000;
+      padding: 13px 38px;
+      border: 1px solid #000000;
+    }
   }
 }

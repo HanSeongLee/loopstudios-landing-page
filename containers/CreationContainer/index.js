@@ -3,35 +3,43 @@ import CreationCard from "../../components/CreationCard";
 
 const creations = [
     {
-        src: '/img/mobile/image-deep-earth.jpg',
+        src: '/img/image-deep-earth.jpg',
+        srcMobile: '/img/mobile/image-deep-earth.jpg',
         title: 'DEEP \nEARTH',
     },
     {
-        src: '/img/mobile/image-night-arcade.jpg',
+        src: '/img/image-night-arcade.jpg',
+        srcMobile: '/img/mobile/image-night-arcade.jpg',
         title: 'NIGHT \nARCADE',
     },
     {
-        src: '/img/mobile/image-soccer-team.jpg',
+        src: '/img/image-soccer-team.jpg',
+        srcMobile: '/img/mobile/image-soccer-team.jpg',
         title: 'SOCCER \nTEAM VR',
     },
     {
-        src: '/img/mobile/image-grid.jpg',
+        src: '/img/image-grid.jpg',
+        srcMobile: '/img/mobile/image-grid.jpg',
         title: 'THE \nGRID',
     },
     {
-        src: '/img/mobile/image-from-above.jpg',
+        src: '/img/image-from-above.jpg',
+        srcMobile: '/img/mobile/image-from-above.jpg',
         title: 'FROM UP \nABOVE VR',
     },
     {
-        src: '/img/mobile/image-pocket-borealis.jpg',
+        src: '/img/image-pocket-borealis.jpg',
+        srcMobile: '/img/mobile/image-pocket-borealis.jpg',
         title: 'POCKET \nBOREALIS',
     },
     {
-        src: '/img/mobile/image-curiosity.jpg',
+        src: '/img/image-curiosity.jpg',
+        srcMobile: '/img/mobile/image-curiosity.jpg',
         title: 'THE \nCURIOSITY',
     },
     {
-        src: '/img/mobile/image-fisheye.jpg',
+        src: '/img/image-fisheye.jpg',
+        srcMobile: '/img/mobile/image-fisheye.jpg',
         title: 'MAKE IT \nFISHEYE',
     },
 ];

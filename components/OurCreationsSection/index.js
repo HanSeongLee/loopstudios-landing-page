@@ -12,12 +12,14 @@ const OurCreationsSection = () => {
                 </h2>
 
                 <div className={styles.creationContainer}>
-                    <CreationContainer />
+                    <CreationContainer/>
                 </div>
 
-                <button className={styles.seeAllButton}>
-                    See All
-                </button>
+                <div className={styles.seeAllButtonWrapper}>
+                    <button className={styles.seeAllButton}>
+                        See All
+                    </button>
+                </div>
             </Container>
         </section>
     );

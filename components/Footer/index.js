@@ -58,7 +58,9 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             <Container className={styles.container}>
-                <Logo/>
+                <div className={styles.logoWrapper}>
+                    <Logo/>
+                </div>
 
                 <ul className={styles.sitemapList}>
                     {sitemap?.map(({name, ...link}, index) => (
@@ -70,16 +72,18 @@ const Footer = () => {
                     ))}
                 </ul>
 
-                <ul className={styles.socialList}>
-                    {socialLinks?.map(({icon, socialLink}, index) => (
-                        <LinkItem {...socialLink}
-                                  key={index}
-                                  external
-                        >
-                            {icon}
-                        </LinkItem>
-                    ))}
-                </ul>
+                <div className={styles.socialListWrapper}>
+                    <ul className={styles.socialList}>
+                        {socialLinks?.map(({icon, socialLink}, index) => (
+                            <LinkItem {...socialLink}
+                                      key={index}
+                                      external
+                            >
+                                {icon}
+                            </LinkItem>
+                        ))}
+                    </ul>
+                </div>
 
                 <p className={styles.copyright}>
                     © 2021 Loopstudios. All rights reserved.

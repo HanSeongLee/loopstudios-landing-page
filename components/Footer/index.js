@@ -1,12 +1,12 @@
 import React from "react";
 import styles from './style.module.scss';
 import Logo from "../Logo";
-import Link from 'next/link';
 import FacebookIcon from '/public/icons/icon-facebook.svg';
 import TwitterIcon from '/public/icons/icon-twitter.svg';
 import PinterestIcon from '/public/icons/icon-pinterest.svg';
 import InstagramIcon from '/public/icons/icon-instagram.svg';
 import Container from "../Container";
+import LinkItem from "../LinkItem";
 
 const sitemap = [
     {
@@ -64,7 +64,6 @@ const Footer = () => {
                     {sitemap?.map(({name, ...link}, index) => (
                         <LinkItem {...link}
                                   key={index}
-                                  internal
                         >
                             {name}
                         </LinkItem>
@@ -75,6 +74,7 @@ const Footer = () => {
                     {socialLinks?.map(({icon, socialLink}, index) => (
                         <LinkItem {...socialLink}
                                   key={index}
+                                  external
                         >
                             {icon}
                         </LinkItem>
@@ -86,26 +86,6 @@ const Footer = () => {
                 </p>
             </Container>
         </footer>
-    );
-};
-
-const LinkItem = ({ href, children, internal }) => {
-    return (
-        <li>
-            {internal ? (
-                <Link href={href}>
-                    <a>
-                        {children}
-                    </a>
-                </Link>
-            ): (
-                <a href={href}
-                   target={'_blank'}
-                >
-                    {children}
-                </a>
-            )}
-        </li>
     );
 };
 

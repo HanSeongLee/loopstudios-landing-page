@@ -1,0 +1,40 @@
+
+.footer {
+  background: #000000;
+  padding: 56px 0;
+  color: #FFFFFF;
+  font-family: "Alata", sans-serif;
+  text-align: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .sitemapList {
+    flex-direction: column;
+    grid-gap: 16px;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 32px;
+    margin-bottom: 48px;
+  }
+
+  .socialList {
+    grid-gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .copyright {
+    font-size: 15px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}

@@ -1,4 +1,10 @@
+@import "styles/utils";
+
 .logo {
   width: 144px;
   height: auto;
+
+  @include media(">tablet") {
+    width: 192px;
+  }
 }

@@ -1,4 +1,10 @@
+import styles from './style.module.scss';
 import Head from 'next/head';
+import Header from "../components/Header";
+import HeroSection from "../components/HeroSection";
+import IntroSection from "../components/IntroSection";
+import OurCreationsSection from "../components/OurCreationsSection";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -52,7 +58,12 @@ export default function Home() {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
       </Head>
 
-      <main>
+      <main className={styles.main}>
+        <Header />
+        <HeroSection />
+        <IntroSection />
+        <OurCreationsSection />
+        <Footer />
       </main>
     </>
   )

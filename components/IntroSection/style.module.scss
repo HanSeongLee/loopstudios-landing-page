@@ -1,34 +1,78 @@
+@import "styles/utils";
 
 .introSection {
   text-align: center;
 
+  @include media(">tablet") {
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
   .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include media(">tablet") {
+      align-items: flex-start;
+    }
   }
 
   .image {
     width: 100%;
     margin-bottom: 48px;
+
+    @include media(">tablet") {
+      width: 731px;
+      height: auto;
+    }
   }
 
-  .title {
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 32px;
-    text-transform: uppercase;
-    color: #000000;
-    width: 279px;
-    margin-bottom: 16px;
+  .contentWrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
   }
 
-  .description {
-    font-family: "Alata", sans-serif;
-    font-size: 15px;
-    line-height: 25px;
-    color: rgba(0, 0, 0, 0.5);
-    width: 279px;
+  .content {
+    background: #FFFFFF;
+
+    @include media(">tablet") {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding: 96px 0 0 96px;
+    }
+
+    .title {
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 32px;
+      text-transform: uppercase;
+      color: #000000;
+      width: 279px;
+      margin-bottom: 16px;
+
+      @include media(">tablet") {
+        font-size: 48px;
+        line-height: 48px;
+        width: 445px;
+        margin-bottom: 25px;
+      }
+    }
+
+    .description {
+      font-family: "Alata", sans-serif;
+      font-size: 15px;
+      line-height: 25px;
+      color: rgba(0, 0, 0, 0.5);
+      width: 279px;
+
+      @include media(">tablet") {
+        width: 445px;
+      }
+    }
   }
 }

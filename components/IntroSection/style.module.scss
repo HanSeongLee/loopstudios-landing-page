@@ -26,13 +26,13 @@
     @include media(">tablet") {
       width: 731px;
       height: auto;
+      margin-bottom: 0;
     }
   }
 
   .contentWrapper {
     width: 100%;
     height: 100%;
-    position: relative;
   }
 
   .content {

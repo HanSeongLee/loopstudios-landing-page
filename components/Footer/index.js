@@ -74,7 +74,7 @@ const Footer = () => {
 
                 <div className={styles.socialListWrapper}>
                     <ul className={styles.socialList}>
-                        {socialLinks?.map(({icon, socialLink}, index) => (
+                        {socialLinks?.map(({icon, ...socialLink}, index) => (
                             <LinkItem {...socialLink}
                                       key={index}
                                       external

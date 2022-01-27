@@ -1,5 +1,11 @@
+@import "styles/utils";
+
 .main {
   display: flex;
   flex-direction: column;
   grid-gap: 96px;
+
+  @include media(">tablet") {
+    grid-gap: 160px;
+  }
 }

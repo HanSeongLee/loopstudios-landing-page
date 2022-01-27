@@ -1,11 +1,11 @@
 import React from "react";
+import styles from './style.module.scss';
+import cn from 'classnames';
 
-const Container = ({ children, ...props }) => {
+const Container = ({ children, className, ...props }) => {
     return (
-        <div style={{
-            padding: '0 24px',
-        }}
-             {...props}
+        <div {...props}
+             className={cn(styles.container, className)}
         >
             {children}
         </div>

@@ -20,6 +20,10 @@
     }
   }
 
+  @include media(">tablet") {
+    padding-top: 64px;
+  }
+
   .container {
     display: flex;
     align-items: center;

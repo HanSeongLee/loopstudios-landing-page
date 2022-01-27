@@ -24,7 +24,7 @@
                            "sitemap copyright";
       align-items: initial;
       justify-content: initial;
-      grid-gap: 24px;
+      grid-gap: 16px;
     }
   }
 
@@ -62,6 +62,7 @@
 
     @include media(">tablet") {
       display: flex;
+      align-items: center;
       justify-content: right;
     }
 

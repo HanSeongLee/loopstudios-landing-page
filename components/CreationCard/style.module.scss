@@ -42,6 +42,8 @@
     @include media(">tablet") {
       font-size: 32px;
       line-height: 32px;
+      padding-left: 40px;
+      padding-bottom: 32px;
     }
   }
 }

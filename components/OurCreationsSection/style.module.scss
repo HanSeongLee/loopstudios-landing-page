@@ -1,6 +1,11 @@
 @import "styles/utils";
 
 .ourCreationsSection {
+
+  @include media(">tablet") {
+    margin-bottom: 16px;
+  }
+
   .container {
     display: flex;
     flex-direction: column;

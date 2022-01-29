@@ -56,6 +56,10 @@
       margin-bottom: 0;
       grid-gap: 32px;
     }
+
+    a {
+      @include hover-underscore;
+    }
   }
 
   .socialListWrapper {
@@ -73,6 +77,10 @@
 
       @include media(">tablet") {
         margin-bottom: 0;
+      }
+
+      a {
+        @include hover-underscore;
       }
     }
   }

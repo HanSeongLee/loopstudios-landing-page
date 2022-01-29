@@ -72,27 +72,7 @@
         line-height: 25px;
       }
 
-      @include media(">desktop") {
-        position: relative;
-
-        &::after {
-          position: absolute;
-          bottom: -10px;
-          left: 50%;
-          width: 24px;
-          height: 2px;
-          content: "";
-          background: #FFFFFF;
-          transform: translateX(-50%) scaleX(0);
-          transition: transform 0.3s;
-        }
-
-        &:hover {
-          &::after {
-            transform: translateX(-50%) scaleX(1);
-          }
-        }
-      }
+      @include hover-underscore;
     }
   }
 

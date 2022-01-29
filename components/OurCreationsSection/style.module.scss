@@ -80,6 +80,16 @@
       color: #000000;
       padding: 13px 38px;
       border: 1px solid #000000;
+      cursor: pointer;
+
+      @include media(">desktop") {
+        transition: color 0.3s, background 0.3s;
+
+        &:hover {
+          color: #FFFFFF;
+          background: #000000;
+        }
+      }
     }
   }
 }
